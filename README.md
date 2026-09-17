@@ -1,19 +1,22 @@
 # Hi, I'm Koushik Katkam
 
-**Full-Stack Developer | AI Engineer | WebGL & Graphics Enthusiast**
+**Vibe Coder | Full-Stack Developer | AI & WebGL Builder**
 
-I'm a B.Tech Data Science student focused on building practical software across **AI/data applications, cybersecurity, full-stack systems, and interactive graphics**.
+I build software by turning ideas into working products — using AI-assisted development, modern web technologies, and a lot of experimentation.
 
-I enjoy working across the stack — from databases, APIs, authentication, and business logic to realtime systems, LLM-powered workflows, WebGL, shaders, and GPU-based experiments.
+My projects range from AI-powered data tools and cybersecurity platforms to full-stack business applications and interactive WebGL experiences.
+
+I enjoy moving quickly from an idea to a working prototype, then improving the architecture, UX, performance, and reliability as the project evolves.
 
 ## About
 
 - B.Tech Data Science student at Kakatiya University College of Engineering and Technology, Warangal
-- Interested in AI engineering, full-stack development, cybersecurity, realtime applications, and computer graphics
-- Building and deploying production-style web applications with Next.js, TypeScript, PostgreSQL, Firebase, and cloud services
-- Exploring LLM-powered data applications and natural-language interfaces
+- Vibe coder focused on building and experimenting with real-world software
+- Building full-stack applications with Next.js, React, TypeScript, PostgreSQL, Firebase, and cloud services
+- Building AI-powered applications using LLMs and natural-language interfaces
+- Exploring cybersecurity, threat intelligence, and realtime systems
 - Experimenting with Three.js, WebGL, GLSL, GPU computation, and interactive experiences
-- Interested in designing reliable systems with practical user experiences
+- Interested in turning ideas into usable products quickly and iterating on them
 
 ## Featured Projects
 
@@ -57,19 +60,19 @@ An AI-powered data intelligence application that connects natural-language inter
 
 ### Hospitality Platforms
 
-Built multiple full-stack restaurant and hospitality platforms implementing real-world ordering, reservation, administration, and content-management workflows.
+Built multiple full-stack restaurant and hospitality platforms for ordering, reservations, menu management, and administration.
 
 **Common capabilities**
 
 - Dynamic menu management
 - Portion-based pricing
-- Search and dietary/category filtering
+- Search and category filtering
 - Persistent shopping carts
-- WhatsApp-based order workflows
-- Delivery and pickup options
+- WhatsApp-based ordering
+- Delivery and pickup workflows
 - Table reservations
 - Admin dashboards and menu CMS
-- Authentication and role-based administration
+- Authentication and administration
 - Firestore database integration
 - Cloudinary media management
 - GST and order calculations
@@ -114,33 +117,54 @@ I also build experimental websites focused on motion, interaction, and visual st
 ## Technical Skills
 
 ### Languages
+
 `Python` `TypeScript` `JavaScript` `SQL` `Java` `C` `HTML` `CSS` `GLSL`
 
-### Full-Stack
+### Full-Stack Development
+
 `React` `Next.js` `Node.js` `Tailwind CSS` `Zustand`
 
 ### AI & Data
+
 `Google Gemini` `LLM Applications` `Natural-Language SQL` `Data Processing` `Data Visualization` `scikit-learn` `Keras`
 
 ### Backend & Databases
+
 `PostgreSQL` `SQLite` `Firebase` `Firestore` `Prisma` `REST APIs` `Server-Sent Events`
 
-### Graphics & Interactive
+### Graphics & Interactive Development
+
 `Three.js` `WebGL` `GLSL` `GPU Computation` `GSAP` `Framer Motion` `Lenis`
 
-### Tools
-`Git` `GitHub` `Vercel` `Cloudinary` `Docker`
-## What I'm Currently Exploring
+### Tools & Platforms
 
-- AI-powered developer and data tools
-- Reliable full-stack application architecture
-- Cybersecurity and threat intelligence systems
+`Git` `GitHub` `Vercel` `Cloudinary` `Docker`
+
+## How I Build
+
+My approach is simple:
+
+1. Start with an idea
+2. Build a working version quickly
+3. Use AI-assisted development to accelerate implementation
+4. Experiment with different approaches
+5. Improve the UX and architecture
+6. Deploy and iterate
+
+I care about shipping ideas, learning through building, and understanding the systems behind what I create.
+
+## Currently Exploring
+
+- AI-assisted software development
+- LLM-powered developer and data tools
+- Full-stack application architecture
+- Cybersecurity and threat intelligence
 - Realtime web applications
 - WebGL and GPU programming
 - Interactive 3D experiences
 - Data-intensive applications
 
-## Contact
+## Connect
 
 - Email: [koushikkatkam@gmail.com](mailto:koushikkatkam@gmail.com)
 - GitHub: [github.com/KatkamKoushik](https://github.com/KatkamKoushik)
