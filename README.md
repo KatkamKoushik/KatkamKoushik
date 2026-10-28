@@ -1,172 +1,121 @@
-# Hi, I'm Koushik Katkam
+﻿<div align="center">
 
-**Vibe Coder | Full-Stack Developer | AI & WebGL Builder**
+# Koushik Katkam
 
-I build software by turning ideas into working products — using AI-assisted development, modern web technologies, and a lot of experimentation.
+**Full-Stack Systems Builder · AI & Data Engineering · Mobile & Creative Computing**
 
-My projects range from AI-powered data tools and cybersecurity platforms to full-stack business applications and interactive WebGL experiences.
+Building applied software across data pipelines, AI-assisted applications, mobile sensing, and interactive graphics.
 
-I enjoy moving quickly from an idea to a working prototype, then improving the architecture, UX, performance, and reliability as the project evolves.
+[LinkedIn](https://linkedin.com/in/koushik-katkam) · [Instagram](https://www.instagram.com/koushik_katkam) · [Email](mailto:koushikkatkam@gmail.com)
 
-## About
-
-- B.Tech Data Science student at Kakatiya University College of Engineering and Technology, Warangal
-- Vibe coder focused on building and experimenting with real-world software
-- Building full-stack applications with Next.js, React, TypeScript, PostgreSQL, Firebase, and cloud services
-- Building AI-powered applications using LLMs and natural-language interfaces
-- Exploring cybersecurity, threat intelligence, and realtime systems
-- Experimenting with Three.js, WebGL, GLSL, GPU computation, and interactive experiences
-- Interested in turning ideas into usable products quickly and iterating on them
-
-## Featured Projects
-
-### GuardAI
-
-A cybersecurity and threat-intelligence platform for analyzing potentially malicious URLs and presenting security findings through a realtime interface.
-
-**Highlights**
-
-- URL security and threat analysis
-- DNS and TLS inspection
-- Integration with external threat-intelligence services
-- Heuristic detection and entropy-based analysis
-- Risk scoring and audit logging
-- Realtime updates using Server-Sent Events
-- Telegram and Discord notifications
-- PDF security reports
-- Interactive 3D threat visualization using Three.js and GLSL
-
-**Stack:** Next.js, TypeScript, PostgreSQL, Prisma, NextAuth, Three.js, GLSL, SSE
+</div>
 
 ---
 
-### Neural Nexus — SchemaSense
+### About
 
-An AI-powered data intelligence application that connects natural-language interaction with database analysis.
-
-**Highlights**
-
-- Natural-language SQL generation
-- Database schema understanding
-- PostgreSQL and SQLite support
-- CSV and PDF data ingestion
-- Column profiling and data-quality analysis
-- Interactive data visualization
-- LLM-powered database workflows
-
-**Stack:** Python, Streamlit, Google Gemini API, PostgreSQL, SQLite, Plotly
+- **Education:** B.Tech Data Science student at Kakatiya University College of Engineering and Technology, Warangal.
+- **Focus:** Earth-observation data pipelines, SQL safety, document intelligence, on-device pose tracking, and interactive WebGL graphics.
+- **Approach:** Emphasis on explicit validation, testable boundaries, data provenance, and transparent reporting of prototype limitations.
 
 ---
 
-### Hospitality Platforms
+### Featured Projects
 
-Built multiple full-stack restaurant and hospitality platforms for ordering, reservations, menu management, and administration.
+#### [CycloneSense](https://github.com/KatkamKoushik/cyclonesense)
+**Tropical-cyclone data ingestion, analysis, and model-interpretability research prototype**
+- Ingests and validates Earth-observation data alongside official storm-track records, including workflows for NOAA GOES-16/18 ABI data and NASA Earthdata CMR.
+- Uses Python and PyTorch for exploratory cyclone modeling, Grad-CAM spatial visualizations, and provenance tracking aligned with W3C PROV concepts.
+- Handles scientific data formats including NetCDF4, HDF5, and xarray-based datasets.
+- **Validation Caveat:** The repository's October 2026 model audit identifies the image-only model's raster inputs as synthetic proxy data and the fusion model as a hybrid using proxy rasters plus environmental variables. Reported scores should not be described as validated predictive accuracy on authentic satellite imagery.
+- **Stack:** Python, FastAPI, PyTorch, Next.js, NetCDF4, HDF5, xarray, SQLAlchemy, Celery
 
-**Common capabilities**
+#### [SchemaSense](https://github.com/KatkamKoushik/schemasense)
+**AI-assisted database exploration and AST-based SQL guardrails**
+- Connects to relational databases to build data dictionaries, profile column quality, and support natural-language-assisted querying.
+- Implements `SQLGuard` with `sqlglot`: limits queries to a single read-only SELECT/UNION statement, applies table allowlists, blocks protected system catalogs and prohibited functions, and enforces execution limits.
+- Supports Google Gemini cloud inference and optional local GGUF inference through llama.cpp.
+- Includes automated tests for query validation, table restrictions, and execution-safety behavior.
+- **Stack:** Python, Streamlit, SQLAlchemy, sqlglot, PostgreSQL, MySQL, SQLite, Google Gemini API, llama.cpp
 
-- Dynamic menu management
-- Portion-based pricing
-- Search and category filtering
-- Persistent shopping carts
-- WhatsApp-based ordering
-- Delivery and pickup workflows
-- Table reservations
-- Admin dashboards and menu CMS
-- Authentication and administration
-- Firestore database integration
-- Cloudinary media management
-- GST and order calculations
+#### [NoticeSync](https://github.com/KatkamKoushik/NoticeSync)
+**Academic-document intelligence and calendar-event extraction**
+- Next.js application for parsing academic circulars and syllabi into structured dates and events.
+- Uses document-grounded retrieval with Supabase pgvector and 768-dimensional Google Gemini embeddings.
+- Adds temporal-conflict checks, human review for ambiguous or conflicting dates, idempotency controls, and downloadable `.ics` calendar exports.
+- Includes automated tests for parsing, date handling, idempotency, provider behavior, and security-sensitive flows. Calendar events can be exported as `.ics` files; automatic Google Calendar synchronization is not implemented.
+- **Stack:** Next.js, React, TypeScript, Supabase (pgvector), Vercel AI SDK, Tesseract.js, pdf-parse, Langfuse
 
-**Stack:** Next.js, React, TypeScript, Tailwind CSS, Firebase/Firestore, Clerk, Cloudinary, Zustand, Framer Motion
+#### [GuardAI](https://github.com/KatkamKoushik/guardai)
+**URL threat analysis and security telemetry**
+- Combines DNS/TLS inspection, external threat-intelligence lookups, lexical heuristics, and entropy-based risk scoring.
+- Supports Server-Sent Events (SSE) for scan telemetry, webhook alerts, and PDF report export.
+- Features an interactive Three.js/WebGL threat globe with custom GLSL shaders and GSAP animation.
+- **Live Demo:** [guardai-six.vercel.app](https://guardai-six.vercel.app)
+- **Stack:** Next.js, React, TypeScript, Prisma, NextAuth, Three.js, GLSL, Tailwind CSS
+
+#### [KinexMed](https://github.com/KatkamKoushik/KinexMed)
+**On-device movement tracking for rehabilitation-exercise observation**
+- Built for the iQOO Hackathon 2026 — Hyderabad City Battle.
+- Uses MediaPipe Tasks Vision (Pose Landmarker) and CameraX for on-device pose tracking on Android.
+- Sends exercise metrics to a FastAPI backend and a React-based clinician-facing web portal.
+- Includes tests for domain calculations, finite-state-machine transitions, and API behavior.
+- **Release:** [KinexMed v1.2.0 on GitHub Releases](https://github.com/KatkamKoushik/KinexMed/releases/tag/v1.2.0) (includes downloadable Android APK asset).
+- **Stack:** Kotlin, Android, MediaPipe Tasks Vision, CameraX, Python, FastAPI, React, Vite, SQLite
+
+#### [BuildMart](https://github.com/KatkamKoushik/BuildMart)
+**Construction-materials procurement marketplace monorepo**
+- Combines a Next.js web application, a FastAPI service, and a Flutter mobile client.
+- Implements marketplace and order-management workflows with backend API tests and multi-target CI configuration.
+- Includes backend API tests and a documented test-execution report.
+- **Release:** [BuildMart v2.0.0 on GitHub Releases](https://github.com/KatkamKoushik/BuildMart/releases/tag/v2.0.0) (includes downloadable Android APK asset).
+- **Stack:** Next.js, TypeScript, FastAPI, Python, Flutter, Dart, pnpm, Turborepo
+
+#### [VYSHUUU](https://github.com/KatkamKoushik/vyshuuu)
+**Digital fashion experience exploring the Indian saree and computational textiles**
+- Builds an interactive digital-fashion experience around the saree and textile form.
+- Uses React Three Fiber and custom GLSL shaders for cloth draping and pleat animation, with Lenis and GSAP for smooth-scroll choreography.
+- **Deployment Status:** The repository README reports that production deployment is pending.
+- **Stack:** Next.js, React, TypeScript, Three.js, React Three Fiber, GLSL, GSAP, Lenis, Zustand, Tailwind CSS
+
+#### [Restaurant Ecosystem](https://github.com/KatkamKoushik/restaurant-ecosystem)
+**Four-brand restaurant web-platform monorepo**
+- Consolidates four restaurant applications: Sampradaya, Majesty Mandi House, Mandiwala, and Aroma, with separate designs and deployment workflows.
+- Repository documentation describes digital menus, portion-based pricing, reservation flows, Clerk authentication, and Firebase/Firestore integrations.
+- Co-authored with [Vyshnavi Nagavelli](https://github.com/nagavellivyshnavi).
+- **Live Deployments:** [Sampradaya](https://sampradaya-multicuisine-family-rest.vercel.app/) · [Majesty Mandi House](https://majesty-mandi-house-eight.vercel.app/) · [Mandiwala](https://mandiwala-arabian-restaurant.vercel.app/) · [Aroma](https://aroma-fine-dine-restaurant-banquet.vercel.app/)
+- **Stack:** Next.js, React, TypeScript, Turborepo, Tailwind CSS, Clerk, Firebase/Firestore
+
+#### [StreetSense](https://github.com/KatkamKoushik/streetsense)
+**Adaptive mobile sensing for pedestrian-safety research**
+- Combines Android sensor inputs such as accelerometer, gyroscope, GPS, ambient light, and camera-related signals with a backend event pipeline.
+- Implements a selective-escalation architecture intended to call more expensive specialist checks when sensor evidence is ambiguous.
+- **Model Caveat:** The repository's verification matrix states that edge-vision weights are not pre-packaged; when absent, the vision expert reports `UNAVAILABLE` rather than returning fabricated detections. This is described as an architecture prototype, not as a fully operational trained vision model.
+- Includes offline Room/SQLite persistence and a FastAPI/PostGIS backend with WebSocket event streaming.
+- **Stack:** Kotlin, Jetpack Compose, CameraX, Android Room, Python, FastAPI, React, SQLite, PostGIS, WebSockets
+
+#### [HealX](https://github.com/KatkamKoushik/HealX)
+**Accessible bilingual healthcare-facility navigation prototype**
+- Provides English/Telugu interfaces, browser text-to-speech, high-contrast controls, and adjustable typography.
+- Offers Gemini-assisted search and a Supabase-backed facility store, with an in-memory Demo Mode for offline/evaluation use.
+- **Data & Scope Disclosure:** The project's default facility records are simulated sample data across South India. The repository explicitly states HealX does not provide medical diagnosis, emergency dispatch, or official government health-record integration.
+- **Stack:** Next.js, React, TypeScript, Supabase, Google Gemini API, Tailwind CSS
 
 ---
 
-### GPU Particle Simulation
+### Technical Skills
 
-A WebGL experiment focused on GPU-based particle simulation and shader programming.
-
-**Highlights**
-
-- GPU computation using `GPUComputationRenderer`
-- 16,384-particle simulation
-- Curl-noise-based particle movement
-- Mouse interaction and vortex effects
-- Custom GLSL particle shaders
-- Post-processing and bloom effects
-
-**Stack:** Three.js, WebGL, GLSL, GPUComputationRenderer
+- **Languages:** Python, TypeScript, JavaScript, Kotlin, Dart, SQL, HTML, CSS, GLSL
+- **Web & Mobile:** Next.js, React, FastAPI, Flutter, Android SDK, Jetpack Compose, Turborepo, Tailwind CSS, Zustand
+- **AI, ML & Data:** PyTorch, MediaPipe Tasks Vision, document-grounded retrieval, Grad-CAM, sqlglot, NetCDF4, HDF5, xarray, Langfuse, Plotly
+- **Databases & Storage:** PostgreSQL, Supabase (pgvector), PostGIS, SQLite / Android Room, Firebase Firestore, Prisma, SQLAlchemy
+- **Graphics & Real-Time:** Three.js, React Three Fiber, WebGL, custom GLSL shaders, GSAP, Lenis, Framer Motion, Server-Sent Events (SSE), WebSockets
+- **Tooling & Infrastructure:** Git, GitHub Actions, Docker, pnpm workspaces, Vercel
 
 ---
 
-### Interactive Web Experiences
+### Connect
 
-I also build experimental websites focused on motion, interaction, and visual storytelling.
-
-**Projects include**
-
-- Scroll-driven cinematic experiences
-- Interactive WebGL scenes
-- Particle systems
-- Shader-based visual effects
-- Custom cursor interactions
-- GSAP and Lenis-based animation systems
-- Responsive interactive interfaces
-
-**Stack:** Three.js, WebGL, GLSL, GSAP, Framer Motion, Lenis, React, Vite
-
-## Technical Skills
-
-### Languages
-
-`Python` `TypeScript` `JavaScript` `SQL` `Java` `C` `HTML` `CSS` `GLSL`
-
-### Full-Stack Development
-
-`React` `Next.js` `Node.js` `Tailwind CSS` `Zustand`
-
-### AI & Data
-
-`Google Gemini` `LLM Applications` `Natural-Language SQL` `Data Processing` `Data Visualization` `scikit-learn` `Keras`
-
-### Backend & Databases
-
-`PostgreSQL` `SQLite` `Firebase` `Firestore` `Prisma` `REST APIs` `Server-Sent Events`
-
-### Graphics & Interactive Development
-
-`Three.js` `WebGL` `GLSL` `GPU Computation` `GSAP` `Framer Motion` `Lenis`
-
-### Tools & Platforms
-
-`Git` `GitHub` `Vercel` `Cloudinary` `Docker`
-
-## How I Build
-
-My approach is simple:
-
-1. Start with an idea
-2. Build a working version quickly
-3. Use AI-assisted development to accelerate implementation
-4. Experiment with different approaches
-5. Improve the UX and architecture
-6. Deploy and iterate
-
-I care about shipping ideas, learning through building, and understanding the systems behind what I create.
-
-## Currently Exploring
-
-- AI-assisted software development
-- LLM-powered developer and data tools
-- Full-stack application architecture
-- Cybersecurity and threat intelligence
-- Realtime web applications
-- WebGL and GPU programming
-- Interactive 3D experiences
-- Data-intensive applications
-
-## Connect
-
-- Email: [koushikkatkam@gmail.com](mailto:koushikkatkam@gmail.com)
-- GitHub: [github.com/KatkamKoushik](https://github.com/KatkamKoushik)
-- LinkedIn: [linkedin.com/in/koushik-katkam](https://linkedin.com/in/koushik-katkam)
-- Instagram: [instagram.com/koushik_katkam](https://instagram.com/koushik_katkam)
+- **LinkedIn:** [Koushik Katkam](https://linkedin.com/in/koushik-katkam)
+- **Instagram:** [koushik_katkam](https://www.instagram.com/koushik_katkam)
+- **Email:** [koushikkatkam@gmail.com](mailto:koushikkatkam@gmail.com)
